@@ -1,16 +1,13 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: noto;
     margin: 0;
-}
-
-main {
-    padding: 22px;
+    background-color: #e0dfdf;
 }
 
 .nav-menu {
-    background-color: rgba(56, 18, 190, 0.863);
-    color: aliceblue;
-    padding: 10px;
+    background-color: rgb(107, 184, 252);
+    color: rgb(255, 255, 255);
+    padding: 0px;
     position: relative;
 }
 
@@ -18,35 +15,41 @@ main {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #444;
-    display: none; /* Começa oculto */
+    background-color: rgb(255, 255, 255);
+    display: none; 
     position: absolute;
-    width: calc(100% - 30px);
+    width: 33%;
     left: 15px;
     top: 60px;
     flex-direction: column;
+    border-radius: 15px;
 }
 
 .menu.menu-open {
-    display: flex; /* Torna o menu visível quando aberto */
+    display: flex; 
 }
 
 .hamburguer-button .icon {
     display: inline-block;
     width: 30px;
+    height: 30px;
     text-align: center;
 }
 
 .hamburguer-button[aria-expanded="false"] .icon::before {
-    content: "\2630"; /* Três tracinhos */
+    content: "\2630"; 
+    font-size: 25px;
+    color: #000000;
 }
 
 .hamburguer-button[aria-expanded="true"] .icon::before {
-    content: "\2715"; /* Cruz */
+    content: "\2715"; 
+    font-size: 25px;
+    color: rgb(0, 0, 0);
 }
 
 .menu li a {
-    color: aliceblue;
+    color: rgb(205, 22, 22);
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -54,15 +57,17 @@ main {
 
 .menu li a:hover,
 .menu li a:focus {
-    background-color: #555;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
+    left: 5px;
+    right: 5px;
 }
 
 .hamburguer-button {
     background: none;
     border: none;
-    color: aliceblue;
+    color: rgb(129, 192, 247);
     font-size: 24px;
     padding: 14px;
     cursor: pointer;
 }
-

@@ -1,13 +1,8 @@
-const btnMenu = document.getElementById("haburguer-button");
+const btnMenu = document.getElementById("hamburguer-button");
 const menu = document.getElementById("menu");
-
-btnMenu.setAttribute("aria-expanded", "false");
-menu.setAttribute("aria-hidden", "true");
 
 btnMenu.addEventListener("click", function() {
     const expanded = this.getAttribute("aria-expanded") === "true";
-
-    document.removeEventListener("click", closeMenu)
 
     if (expanded) {
         menu.classList.remove("menu-open");
@@ -18,6 +13,4 @@ btnMenu.addEventListener("click", function() {
         this.setAttribute("aria-expanded", "true");
         menu.setAttribute("aria-hidden", "false");
     }
-
-    document.addEventListener("click", closeMenu)
 });
