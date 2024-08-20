@@ -1,75 +1,71 @@
 body {
-    font-family: noto;
-    margin: 0;
-    background-color: #e0dfdf;
-}
-
-.nav-menu {
-    background-color: rgb(107, 184, 252);
-    color: rgb(255, 255, 255);
-    padding: 0px;
-    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .menu {
-    list-style: none;
-    font-size: 19px;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    display: none; 
-    position: absolute;
-    width: 23%;
-    left: 15px;
-    top: 60px;
-    flex-direction: column;
-    border-radius: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
 }
 
-.menu.menu-open {
-    display: flex; 
-}
-
-.hamburguer-button .icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+.menu h1 {
     text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: monospace;
 }
 
-.hamburguer-button[aria-expanded="false"] .icon::before {
-    content: "\2630"; 
-    font-size: 25px;
-    color: #000000;
-}
-
-.hamburguer-button[aria-expanded="true"] .icon::before {
-    content: "\2715"; 
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-}
-
-.menu li a {
-    color: rgb(205, 22, 22);
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-}
-
-.menu li a:hover,
-.menu li a:focus {
-    background-color: rgb(246, 246, 246);
-    border-radius: 15px;
-    left: 5px;
-    right: 5px;
-}
-
-.hamburguer-button {
-    background: none;
-    border: none;
-    color: rgb(129, 192, 247);
-    font-size: 24px;
-    padding: 14px;
+.menu-item {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 400px;
+    height: 200px;
 }
+
+.menu-item:hover {
+    background-color: #ededed;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.menu-item h2 {
+    margin: 0;
+    color: #333;
+    font-size: 19px;
+    font-family: cursive;
+}
+
+.description {
+    margin-top: 10px;
+    color: #666;
+    font-size: 16px;
+    text-align: left;
+    display: none;
+}
+
+.menu-item.active .description {
+    display: block;
+}
+
 

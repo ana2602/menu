@@ -1,27 +1,110 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Cardápio de Comida</title>
     <link rel="stylesheet" href="menu.css">
 </head>
-
 <body>
-    <nav class="nav-menu">
-        <button id="hamburguer-button" class="hamburguer-button" aria-label="menu principal" aria-controls="menu" aria-expanded="false">
-            <span class="icon"></span>
-        </button>
+    <div class="menu">
+        <h1>Cardápio</h1>
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/arroz com pequi.jpeg">
+            <h2>ARROZ COM PEQUI</h2>
+            <p class="description">Arroz, pequi, linguiça, alho, cebola, óleo e sal</p>
+        </div>
 
-        <ul id="menu" class="menu" aria-hidden="true">
-            <li><a href="menu.html">Página Principal</a></li>
-            <li><a href="Almoço.html">Almoço</a></li>
-            <li><a href="Bebida.html">Bebida</a></li>
-            <li><a href="Sobremesa.html">Sobremesa</a></li>
-        </ul>
-    </nav>
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/bife à cavalo.jpeg">
+            <h2>BIFE À CAVALO</h2>
+            <p class="description">Pãezinhos de queijo frescos e crocantes.</p>
+        </div>
 
-    <script src="menu.js"></script>
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/costelinha de porcp com ora-pro-nobis.jpeg">
+            <h2>COSTELINHA DE PORCO COM ORA-PRO-NÓBIS</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/dobradinha.jpeg">
+            <h2>DOBRADINHA</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/feijoada.jpeg">
+            <h2>FEIJOADA</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/Frango ao molho pardo.jpeg">
+            <h2>FRANGO AO MOLHO PARDO</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/frango com quiabo (2).jpeg">
+            <h2>FRANGO COM QUIABO</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/galinhada (2).jpeg">
+            <h2>GALINHADA</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/Kaol.jpeg">
+            <h2>KAOL</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/macarrão na chapa.jpeg">
+            <h2>MACARRÃO NA CHAPA</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/prato feito.jpeg">
+            <h2>PRATO FEITO</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/rabada.jpeg">
+            <h2>RABADA</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/strogonoff.jpeg">
+            <h2>STROGONOFF</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/tropeiro.jpeg">
+            <h2>TROPEIRO</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/tutu.jpeg">
+            <h2>TUTU</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+
+        <div class="menu-item" onclick="toggleDescription(this)">
+            <img src="img almoco/vaca atolada.jpeg">
+            <h2>VACA ATOLADA</h2>
+            <p class="description">Frango cozido com quiabo, servido com arroz e angu.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
